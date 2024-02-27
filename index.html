@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4029958_s352e7zcv3h.css">
+</head>
+
+<body>
+  <div class="head flex-row">
+    <div class="dizhi">武汉</div>
+    <div class="name">软帝电影</div>
+    <div class="search"><span class="iconfont icon-search"></span></div>
+  </div>
+  <div class="banner">
+    <div class="banner_body">
+      轮播图
+    </div>
+    <ul class="banner_ul flex-row">
+      <li class="you"></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="body">
+    <script>
+      for(let i = 0; i < 5; i++){
+      document.write(`
+        <div class="card flex-row">
+          <div class="card_img"></div>
+          <div class="card_body flex-column">
+          <div class="card_name"></div>
+          <div class="card_text"></div>
+          </div>
+          <div class="card_xinxi flex-column">
+            <div class="card_fen">8.8</div>
+            <button class="card_btn">购票</button>
+          </div>
+        </div>
+      `)
+      }
+    </script>
+  </div>
+  <div class="foot">
+    <div class="tab">
+      <ul>
+        <li><span class="tab_icon iconfont icon-tuijian"></span><span>推荐</span></li>
+        <li><span class="tab_icon iconfont icon-fenlei"></span><span>分类</span></li>
+        <li><span class="tab_icon iconfont icon-paixing"></span><span>排行</span></li>
+        <li><span class="tab_icon iconfont icon-wode"></span><span>我的</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
